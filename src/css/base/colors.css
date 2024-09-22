@@ -1,0 +1,38 @@
+/* Colors */
+:root {
+    --black: #0D1B2A;
+    --black-2: #1B263B;
+    --blue: #415A77;
+    --blue-2: #778DA9;
+    --white: #E0E1DD;
+    --full-black: #000;
+    --full-white: #FFF;
+    --salesforce-blue: #009DDB;
+}
+
+/* Semantic colors */
+/* Dark theme */
+body { 
+    --page-background-color: var(--black);
+    --card-background-color: var(--black-2);
+    --card-header-border-color: var(--blue);
+    --base-text-color: var(--white);
+    --icon-main-color: var(--white);
+    --button-color: var(--white);
+    --button-hover-color: var(--blue-2);
+
+    --shadow-color: rgba(87, 86, 86, 0.5);
+}
+
+/* Light theme */
+body.m-light-theme {
+    --page-background-color: var(--full-white);
+    --card-background-color: var(--white);
+    --card-header-border-color: var(--black-2);
+    --base-text-color: var(--full-black);
+    --icon-main-color: var(--full-black);
+    --button-color: var(--black-2);
+    --button-hover-color: var(--full-black);
+
+    --shadow-color: rgba(0,0,0,0.5);
+}

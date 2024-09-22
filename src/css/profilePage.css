@@ -1,0 +1,16 @@
+/* Base */
+@import url('./base/colors.css');
+@import url('./base/fonts.css');
+@import url('./base/icons.css');
+
+/* Components */
+@import url('./components/cards.css');
+@import url('./components/buttons.css');
+
+/* Blocks */
+@import url('./blocks/profile.css');
+
+body {
+    background-color: var(--page-background-color);
+    padding: 15px;
+}

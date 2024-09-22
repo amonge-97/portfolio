@@ -1,0 +1,30 @@
+.b-profile {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.b-profile_card {
+    max-width: 600px;
+}
+
+.b-profile_name {
+    font-size: 25px;
+}
+
+.b-profile_img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+.b-profile_salesforce {
+    color: var(--salesforce-blue);
+    font-weight: 600;
+}
+
+.b-profile_contact {
+    display: flex;
+    gap: 10px;
+}

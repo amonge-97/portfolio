@@ -1,0 +1,18 @@
+.c-btn {
+    text-decoration: none;
+    display: flex;
+    border: 2px solid var(--button-color);
+    border-radius: 25px;
+    padding: 7px;
+    gap: 10px;
+    color: var(--button-color);
+}
+
+.c-btn:hover {
+    border-color: var(--button-hover-color);
+    color: var(--button-hover-color);
+}
+
+.c-btn:hover svg {
+    fill: var(--button-hover-color);
+}
