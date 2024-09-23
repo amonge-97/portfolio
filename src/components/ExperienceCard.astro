@@ -1,0 +1,56 @@
+---
+import { getCollection, render } from 'astro:content';
+const experiences = await getCollection('experiences');
+experiences.sort((a, b) => b.data.startdate - a.data.startdate);
+---
+
+<div class="c-card b-experience_card">
+    <div class="c-card_header">
+        <span>Experiencia</span>
+    </div>
+    {
+        experiences.map(async (experience) => {
+            const { data } = experience;
+            const { companysname, role, startdate, enddate } = data;
+            const { Content } = await render(experience)
+            return (
+                <article class="b-experience">
+                    <div class="b-experience_dates-container">
+                        <span class="b-experience_dates">{
+                            startdate.toLocaleDateString('es-MX')}
+                            -
+                            {
+                                enddate
+                                    ? enddate.toLocaleDateString('es-MX')
+                                    : 'Actual'
+                            }
+                        </span>
+                    </div>
+                    <span class="b-experience_name">{companysname} - {role}</span>
+                    <div class="b-experience_description">
+                        <Content />
+                    </div>
+                    <div class="b-experience_see-more-btn-container">
+                        <button class="c-btn b-experience_see-more" data-next-text="Ver Menos">Ver Mas</button>
+                    </div>
+                </article>
+            )
+        })
+    }
+</div>
+
+<script>
+    const SHOW_CONTENT_MODIFIER = 'm-show-all';
+    const seeMoreBtns = document.querySelectorAll('.b-experience_see-more');
+
+    Array.from(seeMoreBtns).forEach(($btn) => $btn.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        const nextText = $btn.dataset.nextText;
+        $btn.dataset.nextText = $btn.innerHTML;
+        $btn.innerHTML = nextText;
+
+        const $description = $btn.parentElement.parentElement.querySelector('.b-experience_description');
+        $description.classList.toggle(SHOW_CONTENT_MODIFIER);
+    }))
+</script>

@@ -1,4 +1,6 @@
 .c-btn {
+    background-color: transparent;
+    cursor: pointer;
     text-decoration: none;
     display: flex;
     border: 2px solid var(--button-color);

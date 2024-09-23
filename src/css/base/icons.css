@@ -3,3 +3,10 @@ svg {
     height: 20px;
     width: 20px;
 }
+
+svg.i-dev {
+    height: 30px;
+    width: 30px;
+    color: var(--icon-main-color);
+    fill: transparent;
+}

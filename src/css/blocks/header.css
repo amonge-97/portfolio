@@ -1,0 +1,45 @@
+.b-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+}
+
+.c-switch .c-switch_checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.c-switch_slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--header-switch-background-color);
+    transition: .4s;
+    border-radius: 15px;
+}
+
+.c-switch_slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 2px;
+    bottom: 2px;
+    background-color: var(--header-switch-color);
+    transition: .4s;
+    border-radius: 50%;
+}
+
+.c-switch_checkbox:checked + .c-switch_slider:before {
+    transform: translateX(20px);
+}

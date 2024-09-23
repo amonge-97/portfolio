@@ -1,0 +1,39 @@
+---
+import Dev from '../icons/Dev.astro'
+---
+
+<header class="b-header">
+    <Dev />
+    <label class="c-switch">
+        <input class="c-switch_checkbox" type="checkbox" id="theme-toggle">
+        <span class="c-switch_slider"></span>
+    </label>
+</header>
+
+<script>
+    const toggleSwitch = document.getElementById('theme-toggle');
+    const body = document.body;
+    const LIGHT_THEME_MODIFIER = 'm-light-theme';
+
+    const currentTheme =
+        localStorage.getItem('theme') ||
+        (window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches
+            ? 'dark'
+            : 'light');
+
+    if (currentTheme === 'light') {
+        body.classList.add(LIGHT_THEME_MODIFIER);
+    }
+    toggleSwitch.checked = currentTheme === 'light';
+
+    toggleSwitch.addEventListener('change', () => {
+        if (toggleSwitch.checked) {
+            body.classList.add(LIGHT_THEME_MODIFIER);
+            localStorage.setItem('theme', 'light');
+        } else {
+            body.classList.remove(LIGHT_THEME_MODIFIER);
+            localStorage.setItem('theme', 'dark');
+        }
+    });
+</script>

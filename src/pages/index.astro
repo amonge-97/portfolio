@@ -1,12 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
 import ProfileCard from '../components/ProfileCard.astro';
-import '../css/profilePage.css';
 import ExperienceCard from '../components/ExperienceCard.astro';
+import '../css/profilePage.css';
 ---
 
 <Layout title="Kevin Monge">
 	<main>
+		<Header />
 		<ProfileCard />
 		<ExperienceCard />
 	</main>

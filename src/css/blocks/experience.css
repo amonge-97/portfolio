@@ -1,0 +1,39 @@
+.b-experience {
+    padding: 15px 0;
+}
+
+.b-experience:not(:last-child) {
+    border-bottom: 1px solid var(--card-header-border-color);
+}
+
+.b-experience_name {
+    color: var(--experience-name-color);
+    font-size: 20px;
+}
+
+.b-experience_dates-container {
+    display: flex;
+    justify-content: end;
+}
+
+.b-experience_dates {
+    color: var(--experience-dates-color);
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.b-experience_description {
+    max-height: 100px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.b-experience_see-more-btn-container {
+    display: flex;
+    justify-content: center;
+    transition: 5s;
+}
+
+.b-experience_description.m-show-all {
+    max-height: fit-content;
+}

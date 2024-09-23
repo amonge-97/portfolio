@@ -8,7 +8,9 @@
 @import url('./components/buttons.css');
 
 /* Blocks */
+@import url('./blocks/header.css');
 @import url('./blocks/profile.css');
+@import url('./blocks/experience.css');
 
 body {
     background-color: var(--page-background-color);

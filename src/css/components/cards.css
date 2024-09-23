@@ -12,5 +12,8 @@
 
 .c-card_header {
     border-bottom: 1px solid var(--card-header-border-color);
+    color: var(--card-header-text-color);
+    font-size: 18px;
+    padding: 10px;
     width: 100%;
 }
