@@ -1,0 +1,3 @@
+Mi nombre es **Kevin Monge**, Soy un desarrollador con +4 años de experiancia especializado en el comercio electronico.
+
+Mi principal herramienta de trabajo actual es **Salesforce B2C Commcer Cloud** en la cual estoy **ceritificado** llevo +3 años trabajando como **Full-Stack**, He participado en el desarrollo de multiples comercios electronicos que actualmente se encuentran en operando de manera productiva, algunos ejemplos son:

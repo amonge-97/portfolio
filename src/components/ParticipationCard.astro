@@ -1,0 +1,14 @@
+---
+import { getCollection, render } from 'astro:content';
+const participations = await getCollection('participations');
+const { Content } = await render(participations[0]);
+---
+
+<div class="c-card b-participacion_card">
+    <div class="c-card_header">
+        <span>Participaciones</span>
+    </div>
+    <div class="b-participacion">
+        <Content />
+    </div>
+</div>

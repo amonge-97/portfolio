@@ -1,0 +1,14 @@
+---
+import { getCollection, render } from 'astro:content';
+const aboutme = await getCollection('aboutme');
+const { Content } = await render(aboutme[0]);
+---
+
+<div class="c-card b-about_me_card">
+    <div class="c-card_header">
+        <span>Sobre Mí</span>
+    </div>
+    <article>
+        <Content/>
+    </article>
+</div>

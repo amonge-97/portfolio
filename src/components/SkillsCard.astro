@@ -1,0 +1,16 @@
+---
+import skills from '../data/skills.json';
+---
+
+<div class="c-card b-skills_card">
+    <div class="c-card_header">
+        <span>Habilidades</span>
+    </div>
+    <div class="b-skills">
+        {
+            skills.map((skill) => (
+                <img src={`img/skills/${skill.image}`} alt={skill.name} />
+            ))
+        }
+    </div>
+</div>

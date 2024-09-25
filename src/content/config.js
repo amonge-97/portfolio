@@ -9,4 +9,6 @@ const experiences = defineCollection({
     })
 });
 
-export const collections = { experiences }
+const aboutme = defineCollection({});
+
+export const collections = { experiences, aboutme }

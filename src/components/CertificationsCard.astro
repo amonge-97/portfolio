@@ -1,0 +1,19 @@
+---
+import certifications  from '../data/certifications.json';
+---
+
+<div class="c-card b-certifications_card">
+    <div class="c-card_header">
+        <span>Certificaciones</span>
+    </div>
+    
+    <div class="b-certifications">
+        {
+            certifications.map((cert) => (
+                <a href={cert.ulr} target="_blank">
+                <img src={`img/certifications/${cert.image}`} alt={cert.name} />
+            </a>
+            ))
+        }
+    </div>
+</div>

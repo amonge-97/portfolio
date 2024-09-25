@@ -2,6 +2,7 @@
 @import url('./base/colors.css');
 @import url('./base/fonts.css');
 @import url('./base/icons.css');
+@import url('./base/layout.css');
 
 /* Components */
 @import url('./components/cards.css');
@@ -11,8 +12,10 @@
 @import url('./blocks/header.css');
 @import url('./blocks/profile.css');
 @import url('./blocks/experience.css');
+@import url('./blocks/certifications.css');
+@import url('./blocks/skills.css');
+@import url('./blocks/participations.css');
 
 body {
     background-color: var(--page-background-color);
-    padding: 15px;
 }

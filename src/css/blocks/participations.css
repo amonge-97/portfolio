@@ -1,0 +1,17 @@
+.b-participacion {
+    width: 100%;
+}
+
+.b-participacion table {
+    text-align: left;
+}
+
+.b-participacion table th,
+.b-participacion table td {
+    width: 50%;
+}
+
+.b-participacion table a {
+    color: var(--link-color);
+    text-decoration: underline;
+}
