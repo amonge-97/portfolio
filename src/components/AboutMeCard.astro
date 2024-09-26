@@ -1,12 +1,18 @@
 ---
 import { getCollection, render } from 'astro:content';
+import { useTranslations, getLangFromUrl } from '../i18n/utils';
+import { filterContentByLanguage } from '../content/utils';
+const lang = getLangFromUrl(Astro.url);
 const aboutme = await getCollection('aboutme');
-const { Content } = await render(aboutme[0]);
+
+const { Content } = await render(filterContentByLanguage(aboutme, lang)[0]);
+
+const t = useTranslations(Astro);
 ---
 
 <div class="c-card b-about_me_card">
     <div class="c-card_header">
-        <span>Sobre Mí</span>
+        <span>{t('about.me.card.title')}</span>
     </div>
     <article>
         <Content/>

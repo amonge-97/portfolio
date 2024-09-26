@@ -2,6 +2,9 @@
 import LinkedIn from '../icons/linkedIn.astro';
 import Email from '../icons/Email.astro';
 import GitHub from '../icons/GitHub.astro';
+import { useTranslations } from '../i18n/utils';
+
+const t = useTranslations(Astro);
 ---
 
 <div class="c-card b-profile_card">
@@ -11,21 +14,21 @@ import GitHub from '../icons/GitHub.astro';
     </div>
 
     <section class="b-profile_description">
-        <p>💡 Desarrollador Certificado de <span class="b-profile_salesforce">Salesforce B2C Commerce Cloud</span> con +4 años de experiencia en el desarrollo de comercios electrónicos.</p>
+        <p>💡 {t('profile.short.about.me.p1')} <span class="b-profile_salesforce">{t('profile.short.about.me.p2')}</span> {t('profile.short.about.me.p3')}</p>
     </section>
 
     <section class="b-profile_contact">
         <a class="c-btn" href="https://www.linkedin.com/in/kevin-alejandro-monge-reyes-4049911a5" target="_blank">
             <LinkedIn />
-            LinkedIn
+            {t('profile.contact.linkedin')}
         </a>
         <a class="c-btn" href="mailto: amonge_rey@hotmail.com">
             <Email />
-            Contacto
+            {t('profile.contact.email')}
         </a>
         <a class="c-btn" href="https://github.com/amonge-97/portfolio" target="_blank">
             <GitHub />
-            Repo
+            {t('profile.contact.repo')}
         </a>
     </section>
 </div>

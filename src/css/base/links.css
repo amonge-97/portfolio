@@ -1,0 +1,7 @@
+a:not(.c-btn) {
+    text-decoration: none;
+}
+
+a:not(.c-btn):hover {
+    text-decoration: underline;
+}

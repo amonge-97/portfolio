@@ -1,0 +1,12 @@
+---
+import { getLanguageToSwitch } from '../i18n/utils';
+import { defaultLang } from '../i18n/ui';
+
+const languageToSwitch = getLanguageToSwitch(Astro);
+---
+
+<div class="c-language_switcher">
+    <a href={languageToSwitch === defaultLang ? '/' : `/${languageToSwitch}`}>
+        {languageToSwitch}
+    </a>
+</div>

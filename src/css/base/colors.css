@@ -24,6 +24,7 @@ body {
       --experience-name-color: var(--full-white);
       --header-switch-background-color: var(--blue-2);
       --header-switch-color: var(--black);
+      --header-language-switcher-color: var(--white);
       --icon-main-color: var(--white);
       --link-color: var(--blue-2);
       --page-background-color: var(--black);
@@ -43,6 +44,7 @@ body.m-light-theme {
     --experience-name-color: var(--full-black);
     --header-switch-background-color: var(--blue-2);
     --header-switch-color: var(--white);
+    --header-language-switcher-color: var(--black);
     --icon-main-color: var(--black);
     --link-color: var(--blue-2);
     --page-background-color: var(--full-white);

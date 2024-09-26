@@ -1,12 +1,20 @@
 ---
 import { getCollection, render } from 'astro:content';
-const experiences = await getCollection('experiences');
+import { useTranslations, getLangFromUrl } from '../i18n/utils';
+import { filterContentByLanguage } from '../content/utils';
+
+const lang = getLangFromUrl(Astro.url);
+let experiences = await getCollection('experiences');
+experiences = filterContentByLanguage(experiences, lang);
 experiences.sort((a, b) => b.data.startdate - a.data.startdate);
+
+
+const t = useTranslations(Astro);
 ---
 
 <div class="c-card b-experience_card">
     <div class="c-card_header">
-        <span>Experiencia</span>
+        <span>{t('experience.card.title')}</span>
     </div>
     {
         experiences.map(async (experience) => {
@@ -17,11 +25,11 @@ experiences.sort((a, b) => b.data.startdate - a.data.startdate);
                 <article class="b-experience">
                     <div class="b-experience_dates-container">
                         <span class="b-experience_dates">{
-                            startdate.toLocaleDateString('es-MX')}
+                            startdate.toLocaleDateString(lang)}
                             -
                             {
                                 enddate
-                                    ? enddate.toLocaleDateString('es-MX')
+                                    ? enddate.toLocaleDateString(lang)
                                     : 'Actual'
                             }
                         </span>
@@ -31,7 +39,7 @@ experiences.sort((a, b) => b.data.startdate - a.data.startdate);
                         <Content />
                     </div>
                     <div class="b-experience_see-more-btn-container">
-                        <button class="c-btn b-experience_see-more" data-next-text="Ver Menos">Ver Mas</button>
+                        <button class="c-btn b-experience_see-more" data-next-text={t('experience.see.less')}>{t('experience.see.more')}</button>
                     </div>
                 </article>
             )
