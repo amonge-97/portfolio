@@ -1,6 +1,17 @@
+---
+import LigthTheme from '../icons/LigthTheme.astro'
+import DarkTheme from '../icons/DarkTheme.astro'
+
+---
+
 <label class="c-theme_switch">
     <input class="c-theme_switch_checkbox" type="checkbox" id="theme-toggle">
-    <span class="c-theme_switch_slider"></span>
+    <div class="c-theme_icon m-light">
+        <LigthTheme />
+    </div>
+    <div class="c-theme_icon m-dark">
+        <DarkTheme />
+    </div>
 </label>
 
 <script>
