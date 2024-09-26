@@ -1,12 +1,15 @@
 ---
 import { getCollection, render } from 'astro:content';
+import { useTranslations } from '../i18n/utils';
 const participations = await getCollection('participations');
 const { Content } = await render(participations[0]);
+
+const t = useTranslations(Astro);
 ---
 
 <div class="c-card b-participacion_card">
     <div class="c-card_header">
-        <span>Participaciones</span>
+        <span>{t('participations.card.title')}</span>
     </div>
     <div class="b-participacion">
         <Content />

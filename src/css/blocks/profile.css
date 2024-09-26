@@ -1,9 +1,8 @@
 .b-profile {
+    align-items: center;
     display: flex;
     gap: 20px;
-    align-items: center;
 }
-
 
 .b-profile_name {
     font-size: 25px;
@@ -12,8 +11,8 @@
 .b-profile_img {
     border-radius: 50%;
     height: 100px;
-    width: 100px;
     object-fit: cover;
+    width: 100px;
 }
 
 .b-profile_salesforce {
@@ -24,6 +23,6 @@
 .b-profile_contact {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 10px;
+    justify-content: center;
 }

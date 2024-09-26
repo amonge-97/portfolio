@@ -5,8 +5,8 @@ svg {
 }
 
 svg.i-dev {
-    height: 30px;
-    width: 30px;
     color: var(--icon-main-color);
     fill: transparent;
+    height: 30px;
+    width: 30px;
 }
