@@ -23,9 +23,9 @@
 }
 
 .b-experience_description {
+    margin-bottom: 15px;
     max-height: 100px;
     overflow: hidden;
-    margin-bottom: 15px;
 }
 
 .b-experience_see-more-btn-container {
