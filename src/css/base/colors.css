@@ -26,6 +26,7 @@ body {
     --header-switch-background-color: var(--blue-2);
     --header-switch-color: var(--black);
     --link-color: var(--blue-2);
+    --strong-text-color: var(--blue-2);
 
     --shadow-color: rgba(87, 86, 86, 0.5);
 }
@@ -42,10 +43,10 @@ body.m-light-theme {
     --button-hover-color: var(--blue-2);
     --experience-name-color: var(--full-black);
     --experience-dates-color: var(--blue-2);
-
     --header-switch-background-color: var(--blue-2);
     --header-switch-color: var(--white);
     --link-color: var(--blue-2);
+    --strong-text-color: var(--blue-2);
 
     --shadow-color: rgba(0,0,0,0.5);
 }
