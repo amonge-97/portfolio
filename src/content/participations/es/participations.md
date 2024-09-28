@@ -1,4 +1,4 @@
-He participado en el desarrollo de múltiples comercios electrónicos que actualmente se encuentran en operando de manera productiva, algunos ejemplos son:
+He participado en el desarrollo de múltiples comercios electrónicos que actualmente se encuentran en operando de manera **productiva**, algunos ejemplos son:
 
 | Tecnología | Sitio |
 | ----------- | ----------- |

@@ -1,8 +1,11 @@
 ---
 import { getCollection, render } from 'astro:content';
-import { useTranslations } from '../i18n/utils';
+import { useTranslations, getLangFromUrl } from '../i18n/utils';
+import { filterContentByLanguage } from '../content/utils';
+
+const lang = getLangFromUrl(Astro.url);
 const participations = await getCollection('participations');
-const { Content } = await render(participations[0]);
+const { Content } = await render(filterContentByLanguage(participations, lang)[0]);
 
 const t = useTranslations(Astro);
 ---

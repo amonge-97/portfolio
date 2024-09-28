@@ -6,8 +6,16 @@
     justify-content: space-evenly;
     padding-top: 10px;
     width: 100%;
+    transition: height 1s ease-in-out;
 }
 
 .b-certifications img {
     height: 110px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.b-certifications a:hover img {
+    height: 120px;
+    margin-bottom: 0;
 }

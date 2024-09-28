@@ -34,5 +34,9 @@
     {
         "name": "NoSQL",
         "image": "nosql.png"
+    },
+    {
+        "name": "Astro",
+        "image": "astro.png"
     }
 ]
