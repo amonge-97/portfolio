@@ -1,4 +1,5 @@
 ---
+import SpeedInsights from '@vercel/speed-insights/astro';
 const { title } = Astro.props;
 const { currentLocale } = Astro;
 ---
@@ -15,6 +16,7 @@ const { currentLocale } = Astro;
 		<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<SpeedInsights />
 	</head>
 	<body>
 		<slot />
