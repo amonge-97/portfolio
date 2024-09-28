@@ -30,7 +30,7 @@ const t = useTranslations(Astro);
                             {
                                 enddate
                                     ? enddate.toLocaleDateString(lang)
-                                    : 'Actual'
+                                    : t('experience.current.period')
                             }
                         </span>
                     </div>

@@ -1,4 +1,4 @@
-I have participated in the development of multiple e-commerce sites that are currently operating productively. Some examples are:
+I have participated in the development of multiple e-commerce sites that are currently operating **productively**. Some examples are:
 
 | Technology | Site |
 | ----------- | ----------- |

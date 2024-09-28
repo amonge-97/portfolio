@@ -1,9 +1,9 @@
 /* Base */
+@import url('./base/layout.css');
 @import url('./base/colors.css');
 @import url('./base/fonts.css');
 @import url('./base/icons.css');
 @import url('./base/links.css');
-@import url('./base/layout.css');
 
 /* Components */
 @import url('./components/cards.css');
