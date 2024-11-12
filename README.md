@@ -21,7 +21,7 @@ To set up this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-    git clone https://github.com/yourusername/your-portfolio.git
+    git clone https://github.com/amonge-97/portfolio.git
     ```
 
 2. Navigate into the project directory:
