@@ -3,6 +3,17 @@ export const languages = {
     es: 'Español',
 };
 
+export const getYearsOfExperience = (): number => {
+    const startWorkingDate = new Date(2020, 10, 30); // November 30, 2020
+    const now = new Date();
+    let years = now.getFullYear() - startWorkingDate.getFullYear();
+    const monthDiff = now.getMonth() - startWorkingDate.getMonth();
+    if (monthDiff < 0 || (monthDiff === 0 && now.getDate() < startWorkingDate.getDate())) {
+        years--;
+    }
+    return years;
+}
+
 export const defaultLang = 'es';
 
 export const ui = {
@@ -14,7 +25,7 @@ export const ui = {
         'skills.card.title': 'Skills',
         'profile.short.about.me.p1': 'Certified',
         'profile.short.about.me.p2': 'Salesforce B2C Commerce Cloud',
-        'profile.short.about.me.p3': 'Developer with over 4 years of experience in e-commerce development.',
+        'profile.short.about.me.p3': `Developer with over ${getYearsOfExperience()} years of experience in e-commerce development.`,
         'profile.contact.linkedin': 'LinkedIn',
         'profile.contact.email': 'Email',
         'profile.contact.repo': 'Repository',
@@ -30,7 +41,7 @@ export const ui = {
         'skills.card.title': 'Habilidades',
         'profile.short.about.me.p1': 'Desarrollador Certificado de',
         'profile.short.about.me.p2': 'Salesforce B2C Commerce Cloud',
-        'profile.short.about.me.p3': 'con +4 años de experiencia en el desarrollo de comercios electrónicos.',
+        'profile.short.about.me.p3': `con ${getYearsOfExperience()} años de experiencia en el desarrollo de comercios electrónicos.`,
         'profile.contact.linkedin': 'LinkedIn',
         'profile.contact.email': 'Correo',
         'profile.contact.repo': 'Repositorio',
